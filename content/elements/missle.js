@@ -39,7 +39,7 @@ class Missle{
             
             if(this.behaviourMode[0]=="D" || this.behaviourMode[0]=="TD"){
                 if((this.posx - this.currentAimX <= this.behaviourMode[2] || this.posx -  this.currentAimX >= -(this.behaviourMode[2])) && (this.posy - this.currentAimY <= this.behaviourMode[2] || this.posy -  this.currentAimY >= -(this.behaviourMode[2]))){
-                    
+                    this.state="exploding";   
                 }
             }
         }
